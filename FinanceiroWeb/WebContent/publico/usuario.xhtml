@@ -14,6 +14,7 @@
 		<h:messages/>
 		<h:inputHidden value="#{usuarioBean.usuario.codigo}"/>
 		<h:inputHidden value="#{usuarioBean.usuario.ativo}"/>
+		<h:inputHidden value="#{usuarioBean.destinoSalvar}"/>
 		
 		<h:panelGrid columns="2">
 			<h:outputLabel value="Nome:" for="nome"/>
@@ -43,8 +44,8 @@
 			<h:outputLabel value="Idioma:" for="idioma"/>
 			<h:selectOneMenu id="idioma" value="#{usuarioBean.usuario.idioma}">
 				<f:selectItem itemValue="pt_BR" itemLabel="Português"/>
-				<f:selectItem itemValue="en_US" itemLabel="English"/>
-				<f:selectItem itemvalue="es_ES" itemLabel="Espanol"/>
+				
+				<f:selectItem itemValue="en_US" itemLabel="English"/>				
 			</h:selectOneMenu>
 			
 			<h:outputLabel value="Login:" for="login" />
